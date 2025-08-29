@@ -8,6 +8,8 @@
     .gallery {
       /* TODO: make 3-column grid */
       gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
     }
     .gallery img {
       width: 100%;
@@ -17,6 +19,7 @@
     @media (max-width: 600px) {
       .gallery {
         /* TODO: change to 2-column grid */
+        grid-template-columns: repeat(2, 1fr);
         
       }
     }

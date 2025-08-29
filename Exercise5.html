@@ -14,6 +14,8 @@
       display: grid;
       /* TODO: Define grid-template-columns and grid-template-rows */
       /* TODO: Add grid-template-areas if using areas */
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: auto 1fr auto;
       gap: 10px;
       padding: 10px;
       height: 100vh;
@@ -24,12 +26,14 @@
       /* TODO: Place header at the top (span all 3 columns) */
         background: #3498db; /* placeholder */
         color: white;
+        grid-column: span 3;
     }
 
     aside {
       /* TODO: Place sidebar in the first column */
      background: #2ecc71; /* placeholder */
      color: white;
+     
     }
 
     main {
@@ -39,6 +43,8 @@
         display: grid;
       /* TODO: Make nested grid for cards (repeat(3, 1fr)) */
       gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(100px, auto);  
     }
 
     .card {
@@ -54,12 +60,16 @@
       /* TODO: Place this in the last column */
       background: #e67e22; /* placeholder */
       color: white;
+
+
+
     }
 
     footer {
       /* TODO: Place footer at the bottom (span all 3 columns) */
       background: #9b59b6; /* placeholder */
       color: white;
+      grid-column: span 3;
     }
   </style>
 </head>

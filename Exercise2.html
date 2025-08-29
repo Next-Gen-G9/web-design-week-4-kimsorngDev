@@ -9,6 +9,8 @@
       /* TODO: Use flexbox row layout */
       gap: 1rem;
       padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
     }
     .card {
       border: 1px solid #ccc;
@@ -24,6 +26,9 @@
     @media (max-width: 600px) {
       .container {
         /* TODO: stack vertically on small screens */
+        display: flex;
+        flex-direction: column;
+        
       }
     }
   </style>
